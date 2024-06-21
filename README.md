@@ -24,7 +24,7 @@ This repository showcases a custom Extract, Load, Transform (ELT) process using 
 
 1. Docker Compose:
 
-The docker-compose.yaml file launches three Docker containers:
+   The docker-compose.yaml file launches three Docker containers:
 
    * A source PostgreSQL database preloaded with sample data.
    * A destination PostgreSQL database.
