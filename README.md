@@ -5,6 +5,7 @@ This repository showcases a custom Extract, Load, Transform (ELT) process using 
 ## Structure
 
 1. docker-compose.yaml: Configures Docker Compose to manage multiple Docker containers.
+
    It sets up three services:
 
    * source_postgres: The source PostgreSQL database.
