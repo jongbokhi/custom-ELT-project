@@ -7,9 +7,9 @@ This repository showcases a custom Extract, Load, Transform (ELT) process using 
 1. docker-compose.yaml: Configures Docker Compose to manage multiple Docker containers.
    It sets up three services:
 
-   (1) source_postgres: The source PostgreSQL database.
-   (2) destination_postgres: The target PostgreSQL database.
-   (3) elt_script: The service executing the ELT script.
+   * source_postgres: The source PostgreSQL database.
+   * destination_postgres: The target PostgreSQL database.
+   * elt_script: The service executing the ELT script.
 
 3. elt_script/Dockerfile: Sets up a Python environment, installs the PostgreSQL client, and incorporates the ELT script, setting it as the default command.
 
@@ -21,9 +21,9 @@ This repository showcases a custom Extract, Load, Transform (ELT) process using 
 
 1. Docker Compose: The docker-compose.yaml file launches three Docker containers:
 
-   (1) A source PostgreSQL database preloaded with sample data.
-   (2) A destination PostgreSQL database.
-   (3) A Python environment running the ELT script.
+   * A source PostgreSQL database preloaded with sample data.
+   * A destination PostgreSQL database.
+   * A Python environment running the ELT script.
 
 2. ELT Process: The elt_script.py waits until the source PostgreSQL database is accessible. Once it is, the script uses pg_dump to export the source database to a SQL file, and then psql to import this SQL file into the destination PostgreSQL database.
 
